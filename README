@@ -1,0 +1,21 @@
+
+####Replication package
+####Date: January 2016
+####Author Rodrigo Morales
+####Subject: This file describe the contents of the replication package
+####Paper Titled: EARMO: An Energy-Aware Refactoring Approach for Mobile Apps
+####Conference: MSR '16
+####Contact: to rodrigo.morales@polymtl.ca
+
+The replication package contains the following elements:
+
+EARMODataSetPretty.csv                   --- The dataset used in the paper.
+EARMOScript.pdf			                 --- The R script to compute the statistics
+medianIRQHIV.pdf		                 --- The Latex table with the results the Hypervolume performance indicator (generated from JMetal)
+medianIRQSpread.pdf	                     --- The Latex table with the results the Hypervolume performance indicator (generated from JMetal)
+MSR16_power_consumption_reference.pdf    --- The energy savings estimations used to calculate the energy efficiency of a refactoring sequence
+
+
+
+
+

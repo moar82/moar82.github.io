@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>Anti-patterns definitions</title>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<br>
+<big><big><big><big>Anti-pattern definitions[4]</big></big></big></big><br>
+<br>
+<table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td>Name</td>
+<td>Description</td>
+<td>Refactoring solution</td>
+</tr>
+<tr>
+<td>Blob (BL) [1]</td>
+<td>A large class that absorbs most of the functionality of
+the system with very low cohesion between its constituents..</td>
+<td>Move method (MM).&nbsp; Move the methods that does
+not
+seem to fit in the Blob class abstraction to more appropriate
+classes[3].</td>
+</tr>
+<tr>
+<td>Lazy Class (LC)[1]</td>
+<td>Small classes with low complexity that do not justify
+their existence<br>
+in the system.&nbsp;</td>
+<td>Inline class (IC). Move the
+attributes and methods of the LC to another class in the system.</td>
+</tr>
+<tr>
+<td>Long Parameter List (LP)[1]</td>
+<td>A class with one or more methods having a long list of
+parameters, specially when two or more methods are sharing a long list
+of parameters that are semantically connected.&nbsp;</td>
+<td>Introduce parameter object (IP). Extract a new class
+with the
+long list of parameters and replace the method signature by a reference
+to the new object created. Then access to this parameters through the
+parameter object.</td>
+</tr>
+<tr>
+<td>Spaghetti Code (SC)[2]</td>
+<td>A class without structure that declares long methods
+without parameters.<br>
+<br>
+</td>
+<td>Replace method with method object (EC). Extract
+long methods into new classes so all local variables become fields on
+that object.</td>
+</tr>
+<tr>
+<td>Speculative Generality (SG)[1]</td>
+<td>There is an abstract class created to anticipate
+further
+features, but it is only extended by one class adding extra complexity
+to the design.&nbsp;</td>
+<td>Collapse hierarchy (CH). Move the
+attributes and methods of the child class to the parent and remove the
+\textit{abstract} modifier.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<br>
+<big><big><big><big>On-line resources<br>
+<br>
+</big></big></big></big>
+<table style="text-align: left; width: 100px;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td><a href="https://sourcemaking.com/refactoring">https://sourcemaking.com/refactoring</a></td>
+</tr>
+<tr>
+<td><a href="https://refactoring.guru/">https://refactoring.guru/</a></td>
+</tr>
+<tr>
+<td><a href="https://martinfowler.com/books/refactoring.html">https://martinfowler.com/books/refactoring.html</a></td>
+</tr>
+<tr>
+<td><a href="http://antipatterns.com/">http://antipatterns.com/</a></td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<br>
+<big><big><big><big>References</big></big></big></big><br>
+<br>
+<table style="text-align: left; width: 685px; height: 304px;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td>[1]</td>
+<td>Fowler, M. (1999). Refactoring: Improving the Design of
+Existing Code. Boston, MA, USA: Addison-Wesley.</td>
+</tr>
+<tr>
+<td>[2]</td>
+<td>Brown,
+W. H., Malveau, R. C., McCormick, H. W., &amp; Mowbray, T. J.
+(1998).AntiPatterns:
+refactoring software, architectures, and projects in crisis.
+John Wiley &amp; Sons, Inc..</td>
+</tr>
+<tr>
+<td>[3]</td>
+<td>Seng, O., Stammel, J., &amp; Burkhart, D. (2006).
+Search-Based Determination of Refactorings for Improving the Class
+Structure of Object-Oriented Systems. GECCO 2006: Genetic and
+Evolutionary Computation Conference, Vol 1 and 2, 1909-1916.
+doi:10.1145/1143997.1144315</td>
+</tr>
+<tr>
+<td>[4]</td>
+<td> Morales, R., Sabane, A., Musavi, P., Khomh, F., Chicano, F., & Antoniol, G. (2016, 14-18 March 2016). Finding the Best Compromise Between Design Quality and Testing Effort During Refactoring. Paper presented at the 2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER).</td>
+</tr>
+</tbody>
+</table>
+
+<big><big><big><big><br>
+</big></big></big></big>
+</body></html>

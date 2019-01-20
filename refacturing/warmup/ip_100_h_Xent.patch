@@ -1,0 +1,99 @@
+diff --git a/src/main/java/CrossEntropyDriver.java b/src/main/java/CrossEntropyDriver.java
+index 84d038a..6c8a827 100644
+--- a/src/main/java/CrossEntropyDriver.java
++++ b/src/main/java/CrossEntropyDriver.java
+@@ -9,7 +9,7 @@ public class CrossEntropyDriver extends AnalysisDriver {
+ 	Xent xent;
+ 	for (int i = 0; i < known.size(); i++) {
+ 	    xent = new Xent();
+-	    double current = xent.process(unknown, known.elementAt(i), 200);
++	    double current = xent.process(new ProcessParameter(unknown, known.elementAt(i), 200));
+ 	    if (current < min_distance) {
+ 		current = min_distance;
+ 		auth = known.elementAt(i).getAuthor();
+diff --git a/src/main/java/ProcessParameter.java b/src/main/java/ProcessParameter.java
+new file mode 100644
+index 0000000..27d98fc
+--- /dev/null
++++ b/src/main/java/ProcessParameter.java
+@@ -0,0 +1,36 @@
++
++public class ProcessParameter {
++	private EventSet e1;
++	private EventSet e2;
++	private int windowSize;
++
++	public ProcessParameter(EventSet e1, EventSet e2, int windowSize) {
++		this.e1 = e1;
++		this.e2 = e2;
++		this.windowSize = windowSize;
++	}
++
++	public EventSet getE1() {
++		return e1;
++	}
++
++	public void setE1(EventSet e1) {
++		this.e1 = e1;
++	}
++
++	public EventSet getE2() {
++		return e2;
++	}
++
++	public void setE2(EventSet e2) {
++		this.e2 = e2;
++	}
++
++	public int getWindowSize() {
++		return windowSize;
++	}
++
++	public void setWindowSize(int windowSize) {
++		this.windowSize = windowSize;
++	}
++}
+\ No newline at end of file
+diff --git a/src/main/java/Xent.java b/src/main/java/Xent.java
+index 9371308..11af979 100644
+--- a/src/main/java/Xent.java
++++ b/src/main/java/Xent.java
+@@ -5,29 +5,29 @@ import java.util.*;
+ 
+ public class Xent {
+ 
+-    public double process(EventSet e1, EventSet e2, int windowSize) {
++    public double process(ProcessParameter parameterObject) {
+ 
+-	double me = meanEntropy(e1,e2,windowSize);
+-	double hhat = (Math.log(1.0*windowSize) / Math.log(2.0)) / me;
++	double me = meanEntropy(parameterObject);
++	double hhat = (Math.log(1.0*parameterObject.getWindowSize()) / Math.log(2.0)) / me;
+ 
+ 	return hhat;
+     }
+ 
+-    private double meanEntropy(EventSet e1, EventSet e2, int windowSize) {
++    private double meanEntropy(ProcessParameter parameterObject) {
+ 	
+ 	double totalEntropy = 0;
+ 	int trials = 0;
+ 	
+-	if (windowSize > e1.size() - 1)
+-	    windowSize = e1.size();
++	if (parameterObject.getWindowSize() > parameterObject.getE1().size() - 1)
++		parameterObject.setWindowSize(parameterObject.getE1().size());
+ 	
+ 	XEDictionary xed = new XEDictionary();
+ 	EventSet dictionary = new EventSet();
+-	dictionary = window(e1,0,windowSize);
++	dictionary = window(parameterObject.getE1(),0,parameterObject.getWindowSize());
+ 	xed.build(dictionary);
+ 
+-	for (int i = 0; i < e2.size(); i++) {
+-	    totalEntropy += xed.find(e2.subset(i,e2.size()));
++	for (int i = 0; i < parameterObject.getE2().size(); i++) {
++	    totalEntropy += xed.find(parameterObject.getE2().subset(i,parameterObject.getE2().size()));
+ 	    trials++;
+ 	}
+ 					      

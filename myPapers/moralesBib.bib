@@ -1,0 +1,160 @@
+@article{Morales2018symred,
+title = "Efficient Refactoring Scheduling based on Partial order Reduction ",
+author = "Rodrigo Morales and Francisco Chicano  and Foutse Khomh and Giuliano Antoniol",
+journal = "Journal of Systems and Software ",
+volume = "",
+number = "",
+pages = "",
+year = "2018",
+note = "",
+issn = "",
+abstract = {Anti-patterns are poor solutions to design problems that make software systems hard to understand and to extend. Components involved in anti-patterns are reported to be consistently related to high changes and faults rates. Developers are advised to perform refactoring to remove anti-patterns, and consequently improve software design quality and reliability. However, since the number of anti-patterns in a system can be very large, the process of manual refactoring can be overwhelming. To assist a software engineer who has to perform this task, we propose a novel approach RePOR (Refactoring approach based on Partial Order Reduction). We perform a case study with five open source systems to assess the performance of RePOR against two well-known metaheuristics (Genetic Algorithm, and Ant Colony Optimization), one conflict-aware refactoring approach and, a new approach based on sampling (Sway). Results show that RePOR can correct a median of 73% of anti-patterns (10% more than existing approaches) with a significant reduction in effort (measured by the number of refactorings applied) ranging from 69% to 85%, and a reduction of execution time ranging between 50% and 87%, in comparison to existing approaches.},
+keywords = {Software Refactoring, Refactoring Schedule, Anti-patterns, Design Quality, Ant Colony Optimization, Genetic Algorithm},
+doi = "https://doi.org/10.1016/j.jss.2018.07.076",
+url_Paper = {Morales-JSS-symred.pdf},
+url ={https://doi.org/10.1016/j.jss.2018.07.076} }
+
+
+@Article{Saborido2018,
+author="Saborido, Rub{\'e}n
+and Morales, Rodrigo
+and Khomh, Foutse
+and Gu{\'e}h{\'e}neuc, Yann-Ga{\"e}l
+and Antoniol, Giuliano",
+title="Getting the most from map data structures in Android",
+journal="Empirical Software Engineering",
+year="2018",
+month="Mar",
+day="02",
+abstract="A map is a data structure that is commonly used to store data as key--value pairs and retrieve data as keys, values, or key--value pairs. Although Java offers different map implementation classes, Android SDK offers other implementations supposed to be more efficient than HashMap: ArrayMap and SparseArray variants (SparseArray, LongSparseArray, SparseIntArray, SparseLongArray, and SparseBooleanArray). Yet, the performance of these implementations in terms of CPU time, memory usage, and energy consumption is lacking in the official Android documentation; although saving CPU, memory, and energy is a major concern of users wanting to increase battery life. Consequently, we study the use of map implementations by Android developers in two ways. First, we perform an observational study of 5713 Android apps in GitHub. Second, we conduct a survey to assess developers' perspective on Java and Android map implementations. Then, we perform an experimental study comparing HashMap, ArrayMap, and SparseArray variants map implementations in terms of CPU time, memory usage, and energy consumption. We conclude with guidelines for choosing among the map implementations: HashMap is preferable over ArrayMap to improve energy efficiency of apps, and SparseArray variants should be used instead of HashMap and ArrayMap when keys are primitive types.",
+issn={1573-7616},
+doi={"10.1007/s10664-018-9607-8},
+url_Paper = {map-data-structures.pdf},
+url={https://doi.org/10.1007/s10664-018-9607-8}
+}
+
+@phdthesis{Morales2017Phd,
+    title    = {Automated Improvement of Software Design by Search-Based Refactoring},
+    school   = {Ecole Polytechnique de Montreal},
+    author   = {Morales, Rodrigo},
+    year     = {2017}, 
+    url_Paper = {RMorales_thesis.pdf},
+    url={https://publications.polymtl.ca/2878/},
+    note     = {Received Best thesis award 2017 from DGIGL at Polytechnique},
+}
+
+@ARTICLE{8052533EARMO, 
+author={R. Morales and R. Saborido and F. Khomh and F. Chicano and G. Antoniol}, 
+journal={IEEE Transactions on Software Engineering}, 
+title={EARMO: An Energy-Aware Refactoring Approach for Mobile Apps}, 
+year={2017}, 
+volume={44}, 
+number={12}, 
+pages={1176-1206}, 
+keywords={Anti-patterns;Energy consumption;Mobile apps;Refactoring;Search-based Software Engineering;Software maintenance}, 
+doi={10.1109/TSE.2017.2757486}, 
+ISSN={0098-5589}, 
+url_Paper =    {http://swat.polymtl.ca/~foutsekh/docs/EARMO-TSE.pdf},
+month={12},}
+
+@Article{Morales2017,
+author="Morales, Rodrigo
+and Chicano, Francisco
+and Khomh, Foutse
+and Antoniol, Giuliano",
+title="Exact search-space size for the refactoring scheduling problem",
+journal="Automated Software Engineering",
+year="2017",
+month="Feb",
+day="10",
+abstract="Ouni et al. ``Maintainability defects detection and correction: a multi-objective approach'' proposed a search-based approach for generating optimal refactoring sequences. They estimated the size of the search space for the refactoring scheduling problem using a formulation that is incorrect; the search space is estimated to be too much larger than it is. We provide in this paper the exact expression for computing the number of possible refactoring sequences of a software system. This could be useful for researchers and practitioners interested in developing new approaches to automate refactoring.",
+issn="1573-7535",
+doi="10.1007/s10515-017-0213-6",
+url_Paper =    {http://rdcu.be/paOV},
+url="https://doi.org/10.1007/s10515-017-0213-6"
+
+}
+
+@article{Morales2017236,
+title = "On the use of developers’ context for automatic refactoring of software anti-patterns ",
+journal = "Journal of Systems and Software ",
+volume = "128",
+number = "",
+pages = "236 - 251",
+year = "2017",
+note = "",
+issn = "0164-1212",
+doi = "https://doi.org/10.1016/j.jss.2016.05.042",
+url_Paper = {http://swat.polymtl.ca/~foutsekh/docs/Morales-JSS.pdf},
+url = "http://www.sciencedirect.com/science/article/pii/S0164121216300632",
+author = "Rodrigo Morales and Zéphyrin Soh and Foutse Khomh and Giuliano Antoniol and Francisco Chicano",
+keywords = "Software maintenance",
+keywords = "Automatic refactoring",
+keywords = "Task context",
+keywords = "Interaction traces",
+keywords = "Anti-patterns",
+keywords = "Metaheuristics ",
+abstract = "Abstract Anti-patterns are poor solutions to design problems that make software systems hard to understand and extend. Entities involved in anti-patterns are reported to be consistently related to high change and fault rates. Refactorings, which are behavior preserving changes are often performed to remove anti-patterns from software systems. Developers are advised to interleave refactoring activities with their regular coding tasks to remove anti-patterns, and consequently improve software design quality. However, because the number of anti-patterns in a software system can be very large, and their interactions can require a solution in a set of conflicting objectives, the process of manual refactoring can be overwhelming. To automate this process, previous works have modeled anti-patterns refactoring as a batch process where a program provides a solution for the total number of classes in a system, and the developer has to examine a long list of refactorings, which is not feasible in most situations. Moreover, these proposed solutions often require that developers modify classes on which they never worked before (i.e., classes on which they have little or no knowledge). To improve on these limitations, this paper proposes an automated refactoring approach, ReCon (Refactoring approach based on task Context), that leverages information about a developer’s task (i.e., the list of code entities relevant to the developer’s task) and metaheuristics techniques to compute the best sequence of refactorings that affects only entities in the developer’s context. We mine 1705 task contexts (collected using the Eclipse plug-in Mylyn) and 1013 code snapshots from three open-source software projects (Mylyn, PDE, Eclipse Platform) to assess the performance of our proposed approach. Results show that ReCon can remove more than 50% of anti-patterns in a software system, using fewer resources than the traditional approaches from the literature. "
+}
+
+
+
+@inproceedings{Morales2016SanerTesting,
+   author = {Morales, Rodrigo and Sabane, Aminata and Musavi, Pooya and Khomh, Foutse and Chicano, Francisco. and Antoniol, Giuliano.},
+   title = {Finding the Best Compromise Between Design Quality and Testing Effort During Refactoring},
+   booktitle = {2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER)},
+   volume = {1},
+	 year={2016},
+   pages = {24-35},
+   keywords = {genetic algorithms
+program testing
+search problems
+software maintenance
+software quality
+MOCell
+NSGA-II
+SPEA2
+design quality
+manual refactoring
+novel search-based multiobjective approach
+open-source systems
+semantic-preserving-code transformations
+single anti-patterns correction
+software development
+testing effort
+Anti-patterns
+Refactoring
+Search-based software engineering},
+   DOI = {10.1109/SANER.2016.23},
+   url_Paper ={http://swat.polymtl.ca/rmorales/preprint/Morales-saner16.pdf},
+   type = {Conference Proceedings}
+   
+}
+
+@INPROCEEDINGS{7081891, 
+author={R. Morales}, 
+booktitle={2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER)}, 
+title={Towards a framework for automatic correction of anti-patterns}, 
+year={2015}, 
+volume={}, 
+number={}, 
+pages={603-604}, 
+keywords={software maintenance;software quality;antipattern detection;automated refactoring;automatic antipattern correction;automatic antipattern removal;metaheuristics;software design quality;software evolution;software maintenance;Correlation;Measurement;Software engineering;Software maintenance;Software systems;Space exploration}, 
+doi={10.1109/SANER.2015.7081891}, 
+url_Paper ={http://swat.polymtl.ca/rmorales/preprint/phdSaner.pdf},
+ISSN={1534-5351}, 
+month={March},}
+
+@INPROCEEDINGS{7081827, 
+author={R. Morales and S. McIntosh and F. Khomh}, 
+booktitle={2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER)}, 
+title={Do code review practices impact design quality? A case study of the Qt, VTK, and ITK projects}, 
+year={2015}, 
+volume={}, 
+number={}, 
+pages={171-180}, 
+keywords={object-oriented programming;software quality;ITK project;Qt project;VTK project;code review practice;modern code review;open source project;post-release bugs;software components;software design quality;software release quality;software system;Analytical models;Complexity theory;Correlation;Measurement;Software design;Software systems}, 
+doi={10.1109/SANER.2015.7081827}, 
+url_Paper={http://swat.polymtl.ca/data/SANER15/Morales-saner15.pdf},
+ISSN={1534-5351}, 
+month={March},}
