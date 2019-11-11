@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>EARMO Web Site</title>
+		<title>IEEE TSE EARMO Web Site</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -29,7 +29,7 @@
 			<nav id="nav">
 				<ul class="container">
 					<li><a href="#top">Top</a></li>
-					<!-- <li><a href="#bio">Bio</a></li>  -->
+					<li><a href="#scripts">EARMO scripts</a></li>
 					<li><a href="#portfolio">Refactored apps using EARMO</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -44,11 +44,8 @@
 						</div>
 						<div class="8u">
 							<header>
-								<h1>Hi, I'm <strong>Rodrigo Morales</strong>.</h1>
-							</header>
-							<p>A PhD student at <a href="http://www.polymtl.ca" target="_blank">Ecole Polytechnique de Montreal </a>.
-							<br>
-							In this page you will find extra material for the paper titled: <br> <strong>EARMO: An Energy-Aware Refactoring Approach for Mobile Apps </strong> 
+								
+							In this page you will find extra material for the paper titled: <br> <strong><a href="http://swat.polymtl.ca/~foutsekh/docs/EARMO-TSE.pdf" target="_blank"> EARMO: An Energy-Aware Refactoring Approach for Mobile Apps </a></strong> 
 							
 							</p>
 							<a href="#portfolio" class="button big scrolly">To explore the code refactored according to EARMO suggestions click here</a>
@@ -57,43 +54,20 @@
 				</article>
 			</div>
 
-		<!-- Bio -->
-			<!--  <div class="wrapper style2">
-				<article id="bio">
+		<!-- scripts -->
+			 <div class="wrapper style2">
+				<article id="scripts">
 					<header>
-						<h2>My Bio.</h2>
-						<p>Rodrigo Morales is a Ph.D. candidate at <a href="http://www.polymtl.ca" target="_blank">Polytechnique Montreal</a>.  He earned his Bsc. degree in computer science in 2005 from <a href="http://www.ipn.mx" target="_blank">Polytechnic of Mexico </a> . In 2008, he earned his Msc. in computer technology from the same University, where he also worked as a Professor in the computer Science department for five years. He has also worked in the bank industry as a software developer for more than three years.  
-						   He is currently supervised by Foutse Khomh, Giuliano Antoniol, and Francisco Chicano (ETS Spain). His research work is related to software design quality, anti-patterns and automated-refactoring.</p>
-					</header> -->
-					<!-- <div class="container">
-						<div class="row">
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-comments-o"></span>
-									<h3>Consequat lorem</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
-							</div>
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-camera-retro"></span>
-									<h3>Lorem dolor tempus</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
-							</div>
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-thumbs-o-up"></span>
-									<h3>Feugiat posuere</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#portfolio" class="button big scrolly">See some of my recent work</a>
-					</footer> -->
+						<h2>EARMO executable implementation.</h2>
+						<p>Here you will have access to scripts used to detect anti-patterns and energy smells.
+						EARMO is a multiobjective approach that relies on a physical energy measurement setup in order to perform the energy measurements.  In addition, we developed a Java console anti-patterns' detection tool that we extended to detect Android code smells. Based on the energy delta's measured used the aforementioned setup, and a dataset of 20 Android apps, we can optimize energy and design quality.</p>
+					</header>
+					<p> To download the Deltas of energy consumption by refactoring type file (Table 7) <a href="/earmo_executable/deltas.txt" target="_blank"> click here </a> </p> 
+					<p> To download the Java implementation of EARMO  <a href="/earmo_executable/earmo_executable.zip" target="_blank"> click here </a> </p> 
+					
+					<p> To download the dex2Jar tool to work with android apks files <a href="https://sourceforge.net/projects/dex2jar/" target="_blank"> click here </a> </p> 
+					
+					
 				</article>
 			</div> 
 
@@ -248,27 +222,26 @@
 						</big></big></big>
 						<table class="contact">
 						<tbody>
-						<tr>
+					 	<tr>
 						<td><big>Address: </big></td>
-						<td><big>SWAT Lab <br>
-						Departement de Genie Informatique et Genie Logiciel Ecole Polytechnique
-						de Montreal <br> C.P. 6079,</big></td>
-						</tr>
-						<tr>
-						<td></td>
-						<td><big>succ.
-						Centre-Ville H3C 3A7, Montreal (Quebec), Canada</big></td>
+						<td><big> EV 3.231,  Departement of Computer Science and Software Engineering,<br>
+						Gina Cody School of Engineering and Computer science, <br>
+						Concordia University  <br>
+						1515 Sainte Catherine Street West <br>
+						Montréal, Québec, Canada	<br>
+						H3G 1M8
+						</big></td>
 						</tr>
 						<tr>
 						<td ><big>E-mail: </big></td>
-						<td><big>rodrigo.morales
-						[AT] polymtl.ca</big></td>
+						<td><big>rodrigomorales2
+						[AT] acm.org</big></td>
 						</tr>
-						<tr >
+						<!-- <tr >
 						<td><big>Phone:</big></td>
 						<td><big>+1
 						(514) 340-4711 extension 7186</big></td>
-						</tr>
+						</tr> -->
 						</tbody>
 						</table>
 
@@ -281,10 +254,11 @@
 									<li><a href="https://twitter.com/RodMor82" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 									<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
 									<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-									<li><a href="http://ca.linkedin.com/in/rodmor82" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.linkedin.com/in/rodmor82" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                    <li><a href="https://www.researchgate.net/profile/Rodrigo_Morales20" ><span class="label">RG</span></a></li>
 									<!-- <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li> -->
 									<!-- <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li> -->
-									<!-- <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li> -->
+									<li><a href="https://github.com/moar82" class="icon fa-github"><span class="label">Github</span></a></li> 
 									<!--
 									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
 									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>

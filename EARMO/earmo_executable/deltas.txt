@@ -1,0 +1,22 @@
+#####These delta values represent the median energy saved after applying a refactoring
+#####A negative value indicate more energy usage
+#moveMethod(0),
+0,-0.002014441
+#introduceParameterObject(2),
+2,0.004739737
+#InlineClass(3),
+3,-0.020451135
+#CollapseHierarchy(4),
+4,0.005646244
+#refactSpaghettiCode(6),
+6,-0.005236596
+#replaceInheritancewDelegation(7),		
+7,-0.006699007
+#BindingResources2Early(9),
+9,-0.041218902
+#ReleasingResources2Late(10),
+10,0.029686579
+#InlineGetterAndSetters(12),
+12,-0.02370828
+#HashMapUsage(13),
+13,-0.016014365
