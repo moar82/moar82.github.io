@@ -225,11 +225,13 @@
 	
 		table
 		{
+			text-align: left;
 			width: 100%;
 		}
 		
 			table.default
 			{
+				text-align: left;
 				width: 100%;
 			}
 
