@@ -16,7 +16,7 @@
 	{
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #000000;
 		font-weight: 300;
 	}
 
@@ -136,6 +136,7 @@
 	p, ul, ol, dl, table
 	{
 		margin-bottom: 2em;
+		text-align: left;
 	}
 
 	/* Form */
