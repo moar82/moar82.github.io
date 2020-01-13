@@ -235,16 +235,21 @@
 
 				table.default tr
 				{
+					text-align: left;
 					border-top: solid 1px #eee;
 				}
 
 					table.default tr:first-child
+					
+					
 					{
+						text-align: left;
 						border-top: 0;
 					}
 			
 				table.default td
 				{
+					text-align: left;
 					padding: 0.5em 1em 0.5em 1em;
 				}
 				
@@ -268,6 +273,7 @@
 				
 				table.default tbody
 				{
+					text-align: left;
 				}
 
 	/* Section/Article */
