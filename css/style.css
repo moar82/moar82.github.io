@@ -223,11 +223,12 @@
 			}
 
 	/* Tables */
-	
-		table
+			
+		table, th, td
 		{
 			text-align: left;
 			width: 100%;
+			border: 1px solid black;
 		}
 		
 			table.default
