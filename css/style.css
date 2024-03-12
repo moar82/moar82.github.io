@@ -14,6 +14,7 @@
 
 	body,input,textarea,select
 	{
+		text-align: left;
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
 		color: #000000;
@@ -135,7 +136,7 @@
 	
 	p, ol, dl, table
 	{
-		margin-bottom: 2em;
+		margin-bottom: 4em;
 		text-align: left;
 	}
 
